@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeNova Technologies - Innovative Software Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading-page">
+        <div class="loader">
+            <svg class="logo-spinner" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="loaderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#8B5CF6"/>
+                        <stop offset="50%" style="stop-color:#A855F7"/>
+                        <stop offset="100%" style="stop-color:#C084FC"/>
+                    </linearGradient>
+                </defs>
+                <path d="M50 10 L80 30 L80 50 L70 60 L80 70 L80 90 L50 90 L20 90 L20 70 L30 60 L20 50 L20 30 Z" fill="none" stroke="url(#loaderGradient)" stroke-width="4" stroke-dasharray="280" stroke-dashoffset="280"/>
+                <rect x="40" y="40" width="20" height="20" fill="white" rx="3"/>
+                <text x="50" y="55" text-anchor="middle" fill="#8B5CF6" font-size="16" font-weight="bold">C</text>
+            </svg>
+            <p>CodeNova</p>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#8B5CF6"/>
+                            <stop offset="50%" style="stop-color:#A855F7"/>
+                            <stop offset="100%" style="stop-color:#C084FC"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 10 L80 30 L80 50 L70 60 L80 70 L80 90 L50 90 L20 90 L20 70 L30 60 L20 50 L20 30 Z" fill="url(#logoGradient)" stroke="url(#logoGradient)" stroke-width="2"/>
+                    <rect x="40" y="40" width="20" height="20" fill="white" rx="3"/>
+                    <text x="50" y="55" text-anchor="middle" fill="#8B5CF6" font-size="16" font-weight="bold">C</text>
+                </svg>
+                CodeNova
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="particles"></div>
+        <div class="hero-content">
+            <h1>CodeNova Technologies</h1>
+            <p>Innovative Software Solutions for the Digital Future. We transform ideas into powerful, scalable applications that drive your business forward.</p>
+            <div class="cta-buttons">
+                <a href="#services" class="btn btn-primary">Our Services</a>
+                <a href="#contact" class="btn btn-outline">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Custom Software Development</h3>
+                <p>Tailored software solutions built with cutting-edge technologies to meet your unique business requirements.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile App Development</h3>
+                <p>Native and cross-platform mobile applications that deliver exceptional user experiences across all devices.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-globe"></i>
+                <h3>Web Development</h3>
+                <p>Modern, responsive websites and web applications that engage users and drive business growth.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Solutions</h3>
+                <p>Scalable cloud infrastructure and migration services to optimize your business operations and reduce costs.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-robot"></i>
+                <h3>AI & Machine Learning</h3>
+                <p>Intelligent solutions powered by artificial intelligence to automate processes and gain valuable insights.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Technical Consulting</h3>
+                <p>Expert guidance and strategic consulting to help you make informed technology decisions and optimize your systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About CodeNova</h2>
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-gray);">
+                At CodeNova Technologies, we are passionate about creating innovative software solutions that transform businesses and enhance user experiences. Our team of skilled developers, designers, and technology consultants work collaboratively to deliver cutting-edge solutions that meet the evolving needs of our clients.
+            </p>
+            <p style="font-size: 1.1rem; color: var(--text-gray);">
+                Founded with a vision to bridge the gap between complex technology and practical business solutions, we specialize in custom software development, mobile applications, web platforms, and emerging technologies like AI and machine learning. Our commitment to excellence and innovation drives us to stay at the forefront of technological advancement.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Get In Touch</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company (Optional)</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service">
+                        <option value="">Select a Service</option>
+                        <option value="custom-software">Custom Software Development</option>
+                        <option value="mobile-app">Mobile App Development</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="cloud-solutions">Cloud Solutions</option>
+                        <option value="ai-ml">AI & Machine Learning</option>
+                        <option value="consulting">Technical Consulting</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Description</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Sending your message...</p>
+                </div>
+                <div id="formResult"></div>
+            </form>
+        </div>
+    </section>
+
+    <section id="profile" class="section">
+        <h2>About Me</h2>
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <img src="https://i.postimg.cc/Tx4V7VDR/Whats-App-Image-2025-09-17-at-20-30-39-04d55dfb.jpg" 
+                 alt="Chirag Jethva" 
+                 style="width:180px; height:180px; border-radius:50%; margin-bottom:20px; border:3px solid #8B5CF6;">
+            
+            <h1>Chirag Jethva</h1>
+            <h2>FOUNDER & CEO</h2>
+            <p>
+                Hi, my name is <b>Chirag Jethva</b>. I am from <b>Rajkot, Gujarat</b>.<br>
+                I am pursuing my <b>MCA</b> from <b>Marwadi University</b>.<br>
+                I am passionate about <b>software development</b>, coding, 
+                and building impactful digital solutions.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+
+            <div class="contact-info" aria-label="contact information">
+                <a class="contact-item" href="tel:+917096299014" title="Call Chirag">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 70962 99014</span>
+                </a>
+
+                <a class="contact-item" href="mailto:jethvac464@gmail.com" title="Email Chirag">
+                    <i class="fas fa-envelope"></i>
+                    <span>jethvac464@gmail.com</span>
+                </a>
+
+                <a class="contact-item" href="https://mail.google.com/mail/?view=cm&fs=1&to=jethvac464@gmail.com" target="_blank" rel="noopener" title="Open in Gmail">
+                    <i class="fab fa-google"></i>
+                    <span>Open in Gmail</span>
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/chirag_jethva___?igsh=cHI1YTY3anJ5ZGox" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/chirag_jethva___?igsh=cHI1YTY3anJ5ZGox" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/chirag_jethva___?igsh=cHI1YTY3anJ5ZGox" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:jethvac464@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 CodeNova Technologies Pvt Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
